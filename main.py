@@ -11,6 +11,7 @@ def bubble_sort_while_loop(list):
     return list
 
 
+
 def bubble_sort_for_loop(arr):
     n = len(arr)
 
