@@ -22,3 +22,15 @@ def bubble_sort_for_loop(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
     return arr
+
+
+def insertion_sort(arr):
+    index_of_arr = range(1,len(arr))
+    for i in index_of_arr:
+        sort_value = arr[i]
+
+        while arr[i-1] > sort_value and i>0:
+            arr[i], arr[i-1] = arr[i-1], arr[i]
+            i -= 1
+    return arr
+
